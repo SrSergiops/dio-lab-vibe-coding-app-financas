@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Assistente Financeiro Conversacional</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+
+  <header role="banner" aria-label="Cabeçalho do aplicativo">
+    <h1>Assistente Financeiro</h1>
+    <p class="subtitle">Organize suas finanças por conversa, com simplicidade e acessibilidade.</p>
+  </header>
+
+  <nav class="tabs" role="navigation" aria-label="Navegação principal">
+    <button class="tab-button" data-tab="chat" aria-controls="tab-chat" aria-selected="true" role="tab">Chat</button>
+    <button class="tab-button" data-tab="metas" aria-controls="tab-metas" aria-selected="false" role="tab">Metas</button>
+    <button class="tab-button" data-tab="relatorios" aria-controls="tab-relatorios" aria-selected="false" role="tab">Relatórios</button>
+    <button class="tab-button" data-tab="ajustes" aria-controls="tab-ajustes" aria-selected="false" role="tab">Ajustes</button>
+  </nav>
+
+  <main id="main" role="main">
+    <!-- Chat -->
+    <section id="tab-chat" class="tab-panel" role="tabpanel" aria-labelledby="Chat" aria-live="polite">
+      <h2>Registro por conversa</h2>
+      <div class="chat-container">
+        <ul id="chat-log" class="chat-log" aria-label="Histórico de conversa"></ul>
+
+        <form id="chat-form" class="chat-form" aria-label="Entrada de mensagem" autocomplete="off">
+          <label for="chat-input" class="sr-only">Mensagem</label>
+          <input id="chat-input" name="message" type="text" inputmode="text" placeholder="Ex.: Gastei R$50 no mercado" aria-required="true" />
+          <button type="submit" class="primary">Enviar</button>
+        </form>
+
+        <details class="helper" aria-label="Sugestões de comandos">
+          <summary>Exemplos úteis</summary>
+          <ul>
+            <li>Gastei R$35 em transporte</li>
+            <li>Recebi R$250 de salário</li>
+            <li>Corrigir: mercado vira alimentação</li>
+            <li>Meta: economizar R$200 este mês</li>
+          </ul>
+        </details>
+      </div>
+    </section>
+
+    <!-- Metas -->
+    <section id="tab-metas" class="tab-panel hidden" role="tabpanel" aria-labelledby="Metas">
+      <h2>Metas financeiras</h2>
+      <form id="goal-form" class="goal-form" aria-label="Definir meta financeira">
+        <div class="field">
+          <label for="goal-amount">Valor da meta mensal (R$)</label>
+          <input id="goal-amount" type="number" min="0" step="1" placeholder="Ex.: 200" />
+        </div>
+        <div class="field">
+          <label for="goal-category">Categoria (opcional)</label>
+          <input id="goal-category" type="text" placeholder="Ex.: alimentação" />
+        </div>
+        <button type="button" id="save-goal" class="primary">Salvar meta</button>
+      </form>
+
+      <div class="goal-progress" aria-label="Progresso das metas">
+        <h3>Progresso</h3>
+        <div id="goal-summary" class="goal-summary"></div>
+      </div>
+    </section>
+
+    <!-- Relatórios -->
+    <section id="tab-relatorios" class="tab-panel hidden" role="tabpanel" aria-labelledby="Relatórios">
+      <h2>Relatórios simples</h2>
+
+      <div class="reports-grid">
+        <section aria-label="Resumo rápido">
+          <h3>Resumo</h3>
+          <ul id="summary-list" class="summary-list"></ul>
+        </section>
+
+        <section aria-label="Gastos por categoria">
+          <h3>Gastos por categoria</h3>
+          <canvas id="category-chart" width="360" height="240" role="img" aria-label="Gráfico de barras por categoria"></canvas>
+          <p class="chart-caption">Cada barra representa o total gasto por categoria no período atual.</p>
+        </section>
+
+        <section aria-label="Gastos semanais">
+          <h3>Gastos por semana</h3>
+          <canvas id="weekly-chart" width="360" height="240" role="img" aria-label="Gráfico de linhas por semana"></canvas>
+          <p class="chart-caption">Linha de tendência dos gastos ao longo das últimas semanas.</p>
+        </section>
+      </div>
+    </section>
+
+    <!-- Ajustes / Acessibilidade -->
+    <section id="tab-ajustes" class="tab-panel hidden" role="tabpanel" aria-labelledby="Ajustes">
+      <h2>Ajustes e acessibilidade</h2>
+      <div class="settings">
+        <div class="field">
+          <label for="theme-select">Tema</label>
+          <select id="theme-select">
+            <option value="light">Claro (alto contraste)</option>
+            <option value="dark">Escuro (alto contraste)</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="font-scale">Tamanho do texto</label>
+          <input id="font-scale" type="range" min="90" max="130" step="5" value="100" aria-valuemin="90" aria-valuemax="130" aria-valuenow="100" />
+        </div>
+
+        <div class="field">
+          <label for="prefers-reduced-motion">Reduzir animações</label>
+          <input id="prefers-reduced-motion" type="checkbox" />
+        </div>
+
+        <button id="export-data" class="secondary">Exportar dados (JSON)</button>
+        <button id="import-data" class="secondary">Importar dados (JSON)</button>
+        <input id="import-file" type="file" accept="application/json" class="sr-only" />
+        <button id="clear-data" class="danger">Limpar dados</button>
+      </div>
+
+      <div class="accessibility-notes">
+        <h3>Design universal</h3>
+        <ul>
+          <li>Alto contraste e tema escuro/claro.</li>
+          <li>Tamanho de fonte ajustável.</li>
+          <li>Compatível com leitores de tela e ARIA aplicado.</li>
+          <li>Navegação simples por teclado (Tab/Enter/Espaço).</li>
+          <li>Linguagem clara e feedback imediato.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <p>Protótipo MVP conversacional. Dados guardados localmente no seu navegador.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
