@@ -192,3 +192,8 @@ FinChat é um aplicativo de organização financeira pessoal que funciona por me
  
     Aprendi que para tirar da IA uma resposta mais completa, devemos criar o melhor prompt possível, para isso temos que ter um excelente conhecimento sobre o tema abordado.
 
+## Geração do código com o Copilot
+
+- Gerei também, só por curiosidade, os códigos do projeto no Copilot, na linguagem HTML,CSS e Javascript.
+- Os códigos podem ser baixados para análise no Github.
+  
