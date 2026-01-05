@@ -5,7 +5,7 @@
 ### PRD Refinado no Copilot Web
 
 ```markdow
-# PRD – App de Organização de Finanças Pessoais (Plataforma Loveble)
+# PRD – App de Organização de Finanças Pessoais (Plataforma Lovable)
 
 ## 1. Contexto
 O aplicativo será um assistente financeiro conversacional, que permite ao usuário organizar suas finanças pessoais por meio de diálogos naturais.  
@@ -59,7 +59,7 @@ A proposta é eliminar a complexidade de planilhas e formulários, oferecendo um
   - Motor de NLP para interpretação de linguagem natural.  
   - Banco de dados para armazenar transações e categorias.  
   - Módulo de IA para recomendações financeiras.  
-  - Interface conversacional integrada à plataforma Loveble.  
+  - Interface conversacional integrada à plataforma Lovable.  
   - Diretrizes de Design Universal aplicadas desde o início (contraste adequado, navegação simples, suporte a leitores de tela, linguagem clara).  
 
 - Validação inicial:  
@@ -74,13 +74,13 @@ A proposta é eliminar a complexidade de planilhas e formulários, oferecendo um
 - Design Universal: pensado para ser inclusivo, acessível e útil para o maior número de pessoas.
 
 ```
-### Interações com o Loveble
+### Interações com o Lovable
 
 > Crie um App de financas pesoais com base no seguinte PRD: {PRD}
 
 > Quando adiciono uma nova meta ela nao e inserida e nao ha um forma de remover uma meta. Alem disso nao consigo ver as entradas individualmente.
 
-Resultado final no Loveble: https://meusgatosmetas.lovable.app
+Resultado final no Lovable: https://meusgatosmetas.lovable.app
 
 ### Prints das interações com a IA
   
@@ -182,11 +182,11 @@ FinChat é um aplicativo de organização financeira pessoal que funciona por me
 
   - O que funcionou bem?
     
-    O refinameno do PRD previamente feito no Copilot ajudou muito, pois os créditos do Loveble acabaram muito rápido.
+    O refinameno do PRD previamente feito no Copilot ajudou muito, pois os créditos do Lovable acabaram muito rápido.
     
   - O que não funcionou como o esperado?
 
-    Esperava poder interagir mais vezes gratuitamente com o Loveble, mas as interações feitas já foram de grande valia para aprender mais sobre Vibe Coding.
+    Esperava poder interagir mais vezes gratuitamente com o Lovable, mas as interações feitas já foram de grande valia para aprender mais sobre Vibe Coding.
     
   - O que aprendeu sobre conversar com IAs?
  
