@@ -195,5 +195,5 @@ FinChat é um aplicativo de organização financeira pessoal que funciona por me
 ## Geração do código com o Copilot
 
 - Gerei também, só por curiosidade, os códigos do projeto no Copilot, na linguagem HTML,CSS e Javascript.
-- Os códigos podem ser baixados para análise no Github.
+- Os códigos podem ser baixados para análise no Github. Estão juntos com o Readme.md
   
