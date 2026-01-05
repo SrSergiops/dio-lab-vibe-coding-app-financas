@@ -1,4 +1,4 @@
-# 💸 App de Organização de Finanças Pessoais com Vibe Coding
+# 💸 App de Finanças Pessoais com Vibe Coding
 
 Aprenda a **criar soluções com IA** de forma criativa, guiando ferramentas como o **Copilot** e o **Lovable** com uma comunicação simples e natural. O foco é desenvolver o conceito de um **App de Organização de Finanças Pessoais**, mas, acima de tudo, aprender o **jeito Vibe de programar com IA**.
 
@@ -73,7 +73,84 @@ Durante essa etapa, você pode orientar a IA para três entregas principais:
 Finalize seu projeto criando um **repositório no GitHub** (pode ser um **fork** deste).  
 No README do seu repositório, inclua:
 
-- Seu **prompt final** (PRD);  
+#### _PRD Refinado no Copilot Web_
+
+```markdow
+# PRD – App de Organização de Finanças Pessoais (Plataforma Loveble)
+
+## 1. Contexto
+O aplicativo será um assistente financeiro conversacional, que permite ao usuário organizar suas finanças pessoais por meio de diálogos naturais.  
+A proposta é eliminar a complexidade de planilhas e formulários, oferecendo uma experiência fluida, acessível e personalizada.
+
+## 2. Problema
+- Excesso de fricção: apps atuais exigem entradas manuais e categorização constante.  
+- Baixa personalização: recomendações genéricas não se adaptam ao perfil do usuário.  
+- Desmotivação: usuários iniciantes abandonam o controle financeiro por falta de simplicidade e engajamento.
+
+## 3. Público-Alvo
+- Pessoas que nunca usaram ou desistiram de apps financeiros por acharem complicados.  
+- Usuários que desejam simplicidade e orientação prática para começar a organizar seus gastos.  
+- Faixa etária predominante: 18–40 anos, com foco em iniciantes digitais e jovens adultos.  
+- Inclusão ampliada: o app deve ser projetado para oferecer boa experiência ao máximo de usuários possíveis, incluindo pessoas com diferentes níveis de letramento digital, necessidades especiais ou limitações de acessibilidade.
+
+## 4. Objetivos do Produto
+- Tornar o controle financeiro acessível e sem barreiras técnicas.  
+- Criar uma experiência educativa e motivadora, com dicas personalizadas.  
+- Garantir Design Universal, permitindo que o app seja usado por pessoas com diferentes perfis e necessidades.  
+- Validar rapidamente a proposta com um MVP funcional que demonstre valor.
+
+## 5. Funcionalidades-Chave
+1. Registro de gastos via chat  
+   - Usuário informa em linguagem natural: “Gastei R$50 no mercado”.  
+   - O app interpreta e registra automaticamente.  
+
+2. Classificação automática de transações  
+   - Algoritmo de NLP identifica categorias (alimentação, transporte, lazer).  
+   - Possibilidade de correção manual pelo usuário.  
+
+3. Metas financeiras  
+   - Definição de objetivos simples: “Quero economizar R$200 este mês”.  
+   - Acompanhamento visual e notificações de progresso.  
+
+4. Agente Financeiro (IA)  
+   - Recomendações personalizadas de economia.  
+   - Alertas sobre gastos excessivos e sugestões de ajuste.  
+
+5. Relatórios personalizados  
+   - Visualização em gráficos simples (pizza, barras).  
+   - Insights rápidos: “Você gastou 30% em alimentação esta semana”.
+
+## 6. MVP – Entregáveis
+- Principais telas:  
+  - Tela de chat (entrada de gastos e interação com IA).  
+  - Tela de metas (definição e acompanhamento).  
+  - Tela de relatórios (gráficos simples).  
+
+- Recursos necessários:  
+  - Motor de NLP para interpretação de linguagem natural.  
+  - Banco de dados para armazenar transações e categorias.  
+  - Módulo de IA para recomendações financeiras.  
+  - Interface conversacional integrada à plataforma Loveble.  
+  - Diretrizes de Design Universal aplicadas desde o início (contraste adequado, navegação simples, suporte a leitores de tela, linguagem clara).  
+
+- Validação inicial:  
+  - Teste com grupo piloto de 20–30 usuários iniciantes e diversidade de perfis.  
+  - Métricas: frequência de uso, número de transações registradas, satisfação com relatórios.  
+  - Feedback qualitativo sobre clareza das dicas, acessibilidade e facilidade de uso.
+
+## 7. Diferenciais
+- Conversação natural em vez de formulários.  
+- Educação financeira embutida: o app ensina enquanto organiza.  
+- Personalização progressiva: quanto mais o usuário interage, mais precisas ficam as recomendações.  
+- Design Universal: pensado para ser inclusivo, acessível e útil para o maior número de pessoas.
+
+```
+#### _Interações com o Loveble_
+
+> Crie um App de financas pesoais com base no seguinte PRD: {PRD}
+> Quando adiciono uma nova meta ela nao e inserida e nao ha um forma de remover uma meta. Alem disso nao consigo ver as entradas individualmente.
+
+Resultado final no Loveble: 
 - Prints ou pequenos vídeos das interações com a IA;  
 - Um resumo do que o seu **App de Finanças Pessoais** faz;  
 - Uma breve **reflexão sobre o processo**:
