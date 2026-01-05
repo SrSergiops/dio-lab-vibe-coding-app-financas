@@ -71,9 +71,10 @@ Durante essa etapa, você pode orientar a IA para três entregas principais:
 ### 3. Entregando o Desafio na DIO
 
 Finalize seu projeto criando um **repositório no GitHub** (pode ser um **fork** deste).  
+
 No README do seu repositório, inclua:
 
-#### _PRD Refinado no Copilot Web_
+### _PRD Refinado no Copilot Web_
 
 ```markdow
 # PRD – App de Organização de Finanças Pessoais (Plataforma Loveble)
@@ -145,18 +146,122 @@ A proposta é eliminar a complexidade de planilhas e formulários, oferecendo um
 - Design Universal: pensado para ser inclusivo, acessível e útil para o maior número de pessoas.
 
 ```
-#### _Interações com o Loveble_
+### _Interações com o Loveble_
 
 > Crie um App de financas pesoais com base no seguinte PRD: {PRD}
+
 > Quando adiciono uma nova meta ela nao e inserida e nao ha um forma de remover uma meta. Alem disso nao consigo ver as entradas individualmente.
 
-Resultado final no Loveble: 
-- Prints ou pequenos vídeos das interações com a IA;  
-- Um resumo do que o seu **App de Finanças Pessoais** faz;  
+Resultado final no Loveble: https://meusgatosmetas.lovable.app
+
+### _Prints das interações com a IA_
+  
+  <img width="1362" height="607" alt="image" src="https://github.com/user-attachments/assets/99ed6c9e-5afa-4a36-8814-2624307a2f86" />
+  
+  <img width="1347" height="599" alt="image" src="https://github.com/user-attachments/assets/fa7ef63e-c24d-48fe-89a8-7d15da50cc7e" />
+  
+  <img width="1358" height="602" alt="image" src="https://github.com/user-attachments/assets/f750609d-6f78-4425-b87d-2e4dbf974cee" />
+
+  <img width="1344" height="602" alt="image" src="https://github.com/user-attachments/assets/cb666087-c709-47fd-99a9-c865afc15d24" />
+
+  <img width="1362" height="602" alt="image" src="https://github.com/user-attachments/assets/3db3b13f-d8b1-44c6-bbdc-4cd52539dded" />
+
+### _Um resumo do que o seu **App de Finanças Pessoais** faz_
+
+```markdow
+# 💬 FinChat – MVP de App de Finanças Pessoais Conversacional
+
+## 🧠 Visão Geral
+FinChat é um aplicativo de organização financeira pessoal que funciona por meio de conversas naturais. O usuário interage com o app como se fosse um chat, informando salário, ganhos, gastos fixos e variáveis. O app registra, categoriza e gera insights simples, sem necessidade de planilhas ou formulários.
+
+---
+
+## 🎯 Objetivos do MVP
+- Registrar salário e ganhos mensais.
+- Registrar gastos fixos obrigatórios.
+- Registrar gastos variáveis via chat ou escaneamento de nota fiscal.
+- Categorizar automaticamente os gastos.
+- Exibir resumo simples dos gastos e saldo disponível.
+
+---
+
+## 📲 Funcionalidades Principais
+
+### 🗨️ Chat Financeiro Inteligente
+- Interface principal baseada em conversas naturais.
+- Exemplos de entrada:  
+  - `Gastei R$50 no mercado`  
+  - `Recebi R$3000 de salário`
+
+### 💰 Registro de Ganhos
+- Informar salário e rendimentos extras no início do mês.
+
+### 📋 Registro de Gastos Fixos
+- Registrar despesas recorrentes como aluguel, contas e mensalidades.
+
+### 🛒 Registro de Gastos Variáveis
+- Digitação manual ou escaneamento de nota fiscal via QR Code.
+- Extração automática de valor, data e categoria.
+
+### 📊 Visão Geral e Relatórios
+- Total de ganhos, gastos e saldo disponível.
+- Relatórios por categoria e evolução mensal.
+
+### 🎯 Metas Financeiras
+- Definição de objetivos como economia para viagens ou compras.
+- Acompanhamento do progresso.
+
+### 💡 Dicas Financeiras
+- Sugestões simples e úteis, como:  
+  `Separe pelo menos 10% da sua renda para emergências.`
+
+---
+
+## 🚀 Funcionalidades Futuras (fora do MVP)
+- OCR para leitura de notas sem QR Code.
+- Integração com bancos via API.
+- Relatórios gráficos detalhados.
+- Metas gamificadas e alertas inteligentes.
+
+---
+
+## 👤 Público-Alvo
+- Pessoas que querem controlar finanças sem planilhas.
+- Usuários que preferem interações rápidas e naturais.
+- Jovens adultos e profissionais que buscam praticidade.
+
+---
+
+## 📈 Métricas de Sucesso
+- Registro de salário e gastos fixos no início do mês.
+- Frequência de registro de gastos variáveis.
+- Uso da função de escaneamento de notas.
+- Engajamento no chat (interações mensais).
+
+---
+
+## 🛠️ Requisitos Técnicos
+- **Plataforma:** Mobile-first (Android/iOS)
+- **Backend:** API para armazenamento de dados financeiros
+- **Banco de dados:** SQLite ou PostgreSQL
+- **NLP:** Processamento de linguagem natural
+- **Scanner QR Code:** Integração com câmera do dispositivo
+
+
+```
+
 - Uma breve **reflexão sobre o processo**:
-  - O que funcionou bem?  
-  - O que não funcionou como o esperado?  
+  - O que funcionou bem?
+    
+    O refinameno do PRD previamente feito no Copilot ajudou muito, pois os créditos do Loveble acabaram muito rápido.
+    
+  - O que não funcionou como o esperado?
+
+    Esperava poder interagir mais vezes gratuitamente com o Loveble, mas as interações feitas já foram de grande valia para aprender mais sobre Vibe Coding.
+    
   - O que aprendeu sobre conversar com IAs?
+ 
+    Aprendi que para tirar da IA uma resposta mais completa, devemos criar o melhor prompt possível, para isso temos que ter um excelente conhecimento sobre o tema abordado.
 
 > [!TIP]
 > Publique seu repositório e compartilhe o link na plataforma da DIO! Sua entrega é a prova de que você domina o raciocínio de Vibe Coding, mesmo sem escrever uma única linha de código.
