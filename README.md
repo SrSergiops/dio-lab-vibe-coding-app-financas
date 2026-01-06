@@ -1,5 +1,7 @@
 # 💸 App de Finanças Pessoais com Vibe Coding
 
+## [Video para divulgar o App](https://app.heygen.com/videos/ea75b8e2352a41c19deb5ac5645c5291)
+
 ## Entregando o Desafio na DIO
 
 ### PRD Refinado no Copilot Web
